@@ -1,4 +1,4 @@
-# godaddy-api
+﻿# godaddy-api
 Scripts for manipulate dns-records over API GoDaddy
 
 Во всех скриптах необходимо указать путь к файлу .env в котором должны
@@ -8,7 +8,6 @@ Scripts for manipulate dns-records over API GoDaddy
 Например:
 
 $ cat /path/to/.env
-
 KEY='9jL...j7A'
 SECRET='Ppq...Eov'
 
