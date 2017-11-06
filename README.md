@@ -7,8 +7,8 @@ Scripts for manipulate dns-records over API GoDaddy
 
 Например:
 
-$ cat /path/to/.env 
-KEY='9jL...j7A' 
-SECRET='Ppq...Eov' 
+$ cat /path/to/.env
 
+KEY='9jL...j7A'
+SECRET='Ppq...Eov'
 
