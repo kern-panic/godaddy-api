@@ -1,6 +1,8 @@
 ﻿# godaddy-api
 Scripts for manipulate dns-records over API GoDaddy
 
+Проверено на Ubuntu 16.04. По идее должно работать на большинстве дистрибутивов Linux.
+
 Во всех скриптах необходимо указать путь к файлу .env в котором должны
 быть указаны реквизиты для аутентификации и авторизации (Key:Secret) в
 сервисе API GoDaddy.
