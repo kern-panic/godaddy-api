@@ -12,7 +12,7 @@
 ### SET VARIABLES ####################################################################
 
 # Секретная пара для аутентификации на GoDaddy
-source /path/to/.env
+source ./.env
 AUTH="Authorization: sso-key ${KEY}:${SECRET}"
 
 # Установка временных меток

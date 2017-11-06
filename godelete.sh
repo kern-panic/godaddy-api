@@ -10,7 +10,7 @@
 ### SET VARIABLES ####################################################################
 
 # Секретная пара для аутентификации на GoDaddy
-source /path/to/.env
+source ./.env
 AUTH="Authorization: sso-key ${KEY}:${SECRET}"
 
 # Установка места хранения резервных копий
@@ -105,7 +105,7 @@ echo "Создадим резервную копию для выбранного
 
 if [ ! `ls ./ | grep gobackup.sh` ]
   then
-      GOBACKUPPATH=`find / -name "gobackup.sh" 2>/dev/null | grep -m 1 '/godaddy/'`
+      GOBACKUPPATH=`find / -name "gobackup.sh" 2>/dev/null | grep -m 1 '/godaddy-api/'`
   else
       GOBACKUPPATH='./gobackup.sh'
 fi
