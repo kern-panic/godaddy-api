@@ -6,9 +6,7 @@ Scripts for manipulate dns-records over API GoDaddy
 сервисе API GoDaddy.
 
 Например:
-
 $ cat /path/to/.env
 # Секретная пара для аутентификации на GoDaddy
 KEY='9jL...j7A'
 SECRET='Ppq...Eov'
-
