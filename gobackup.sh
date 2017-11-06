@@ -136,15 +136,11 @@ for DNSDOMAINS in $(dns_domains)
   do
     backup_domains ${DNSDOMAINS}
 
-    # Оставляем в папке с резервными копиями только последние 14
+    # Оставляем в папке с резервными копиями только за последние 14 дней
     find ${BACKUP_DIR}/${DNSDOMAINS} -type f -mtime +14 -delete
     
     echo "Finishing backup for ${DNSDOMAINS} dns-zone"
   done
-
-# Синхронизируем папку с резервными компиями файлов dns-zone
-# с нашим облачным хранилищем на BackBlaze
-b2 sync --delete ${BACKUP_DIR}/ b2://mlm-soft/GoDaddy
 
 echo ""
 echo "AlRight!"
